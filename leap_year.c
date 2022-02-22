@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int anno = 0;
+  unsigned int anno = 0;
 
   printf("Wanna know which year is a leap year? ");
   scanf("%i", &anno);
