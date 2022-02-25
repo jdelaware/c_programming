@@ -17,19 +17,18 @@ int main() {
   switch(operator)
   {
     case '+':  result = first_operand + second_operand;
-               printf("\n%.2lf + %.2lf = %.2lf\n",first_operand, second_operand, result);
                break;
     case '-':  result = first_operand - second_operand;
-               printf("\n%.2lf - %.2lf = %.2lf\n",first_operand, second_operand, result);
                break;
     case '*':  result = first_operand * second_operand;
-               printf("\n%.2lf * %.2lf = %.2lf\n",first_operand, second_operand, result);
                break;
     case '/':  result = first_operand / second_operand;
-               printf("\n%.2lf / %.2lf = %.2lf\n",first_operand, second_operand, result);
                break;
     default:   printf("Error. Invalid input.\n");
   }
+
+  // Output
+  printf("%lf %c %lf = %lf", first_operand, operator, second_operand, result);
 
   return 0;
 }
